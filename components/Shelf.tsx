@@ -23,7 +23,7 @@ const Shelf = (props: Props) => {
         className=" h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center "
       >
         <div className=" absolute top-10 uppercase tracking-[10px] text-white text-2xl">
-          Creator's Shelf
+          Creators Shelf
         </div>
         <div className="w-full flex overflow-x-scroll snap-x snap-mandatory absolute space-x-5 top-12 p-10  ">
           <ShelfCard />

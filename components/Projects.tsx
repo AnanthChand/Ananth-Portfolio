@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Props = {};
 
@@ -23,42 +24,52 @@ function Projects({}: Props) {
 
         <div className="w-[800px] carousel  absolute top-36 opacity-80 hover:opacity-100">
           <div className="carousel-item w-full flex flex-col items-center  justify-center">
-            <img
-              src="ananth.jpg"
+            <Image
+              src="/ananth.jpg"
               className="w-[600px] rounded-lg cursor-pointer"
               alt="Tailwind CSS Carousel component"
+              width={600}
+              height={600}
             />
             <h1>Project 1</h1>
           </div>
           <div className="carousel-item w-full flex flex-col items-center  justify-center">
-            <img
-              src="ananth.jpg"
+            <Image
+              src="/ananth.jpg"
               className="w-[600px] rounded-lg cursor-pointer"
               alt="Tailwind CSS Carousel component"
+              width={600}
+              height={600}
             />
             <h1>Project 2</h1>
           </div>
           <div className="carousel-item w-full flex flex-col items-center  justify-center">
-            <img
-              src="ananth.jpg"
+            <Image
+              src="/ananth.jpg"
               className="w-[600px] rounded-lg cursor-pointer"
               alt="Tailwind CSS Carousel component"
+              width={600}
+              height={600}
             />
             <h1>hello</h1>
           </div>
           <div className="carousel-item w-full flex flex-col items-center  justify-center">
-            <img
-              src="ananth.jpg"
+            <Image
+              src="/ananth.jpg"
               className="w-[600px] rounded-lg cursor-pointer"
               alt="Tailwind CSS Carousel component"
+              width={600}
+              height={600}
             />
             <h1>hello</h1>
           </div>
           <div className="carousel-item w-full flex flex-col items-center  justify-center">
-            <img
-              src="ananth.jpg"
+            <Image
+              src="/ananth.jpg"
               className="w-[600px] rounded-lg cursor-pointer"
               alt="Tailwind CSS Carousel component"
+              width={600}
+              height={600}
             />
             <h1>hello</h1>
           </div>

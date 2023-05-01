@@ -6,6 +6,7 @@ import { Roboto } from "next/font/google";
 import { Sacramento } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 
 const roboto = Roboto({
   weight: ["900", "700"],
@@ -41,10 +42,12 @@ export default function Hero({}: Props) {
 
       <div className="h-screen flex flex-col justify-center items-center text-center overflow-hidden space-y-8 ">
         <BackgroundCircles />
-        <img
+        <Image
           src="/ananth.JPG"
           alt=""
           className="rounded-xl h-32 object-cover w-32 relative mx-auto"
+          width={124}
+          height={124}
         />
         <div className="z-20">
           <div className={inter.className}>
