@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Arimo } from 'next/font/google';
+import Image from "next/image";
+
 
 const arimo = Arimo({ weight: ['400'], subsets: ['cyrillic'] });
 
@@ -30,11 +32,10 @@ function About({}: Props) {
         <h3 className=" absolute top-0 uppercase tracking-[20px] text-gray-500 md:text-2xl text:sm md:top-[-50px]">
           About
         </h3>
-        <motion.img
-          initial={{ x: -200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          src={'/ananth4.jpg'}
+        <Image
+          src="/ananth4.JPG"
+          width={80}
+          height={80}
           alt=""
           className="flex h-20 w-20 object-cover -mb-32  rounded-full flex-shrink-0  md:rounded-xl md:w-64 md:h-96 xl:w-max xl:h-[450px] xl:ml-10 xl:mb-36 md:mb-20 md:ml-20  "
         />
