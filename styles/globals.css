@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+
+
+.contactInput{
+    @apply outline-none bg-slate-400 rounded-sm border-b px-6 py-4 border-[#242424] text-white placeholder-slate-500 transition-all focus:border-white/80 focus:text-white/80 hover:border-black
+}
+
+
