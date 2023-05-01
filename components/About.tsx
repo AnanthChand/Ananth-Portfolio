@@ -34,7 +34,7 @@ function About({}: Props) {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          src="/ananth4.jpg"
+          src={'/ananth4.jpg'}
           alt=""
           className="flex h-20 w-20 object-cover -mb-32  rounded-full flex-shrink-0  md:rounded-xl md:w-64 md:h-96 xl:w-max xl:h-[450px] xl:ml-10 xl:mb-36 md:mb-20 md:ml-20  "
         />
