@@ -1,8 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Arimo } from "next/font/google";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Arimo } from 'next/font/google';
 
-const arimo = Arimo({ weight: ["400"], subsets: ["cyrillic"] });
+const arimo = Arimo({ weight: ['400'], subsets: ['cyrillic'] });
 
 type Props = {};
 
@@ -44,7 +44,7 @@ function About({}: Props) {
             “Why create just a fictional world when I can create the real
             world?” This thought struck me three years ago while I was working
             on my second novel, which will eventually become my first English
-            novel titled "The Lost, Last Dancer." It will be an epic adventure
+            novel titled The Lost, Last Dancer. It will be an epic adventure
             period novel set in the era of Mughals. As the thought struck I
             started to learn coding, developing websites…. Oh wait let me start
             my story from the beginning. I was born and brought up in a Malnad
@@ -55,7 +55,7 @@ function About({}: Props) {
             reason was that I was fed up with fake failing at VTU, I gradually
             realized my potential as an artist, and it was the pre-corona era.
             Just a few months after my fellow batchmates graduated, I published
-            my first novel, "Saamyagaana." The journey took 1.5 years and 76,000
+            my first novel, Saamyagaana. The journey took 1.5 years and 76,000
             words. After this, I pursued a diploma in filmmaking, where I
             assisted, wrote, directed and acted in short movies, music videos,
             and a feature movie. Meanwhile, my second novel was taking shape,
