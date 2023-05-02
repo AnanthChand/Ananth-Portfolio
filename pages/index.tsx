@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       <section id="skills" className="snap-center ">
-        <Skills />
+        <Skills src={""} percentage={0} />
       </section>
 
       <section id="projects" className="snap-center ">

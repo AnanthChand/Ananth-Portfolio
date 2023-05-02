@@ -27,9 +27,9 @@ function About({}: Props) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className=" h-screen flex flex-col relative top-24 text-center md:text-left md:flex-row px-10 max-w-7xl justify-around mx-auto items-center"
+        className=" h-screen flex flex-col relative md:top-24  text-center md:text-left md:flex-row px-10 max-w-7xl justify-around mx-auto items-center"
       >
-        <h3 className=" absolute top-0 uppercase tracking-[20px] text-gray-500 md:text-2xl text:sm md:top-[-50px]">
+        <h3 className=" absolute top-5 uppercase tracking-[20px] text-gray-500 md:text-2xl text:sm md:top-[-50px]">
           About
         </h3>
         <Image
@@ -41,7 +41,7 @@ function About({}: Props) {
         />
         {/* -mb-20 md:mb-0 md:h-[300px] flex-shrink-0  h-[50px] w-max md:w-max xl:h-[200px] xl:w-max xl:mb-0 rounded-xl */}
         <div className={arimo.className}>
-          <p className=" text-[12px] text-black md:text-[15px] space-y-1 mb-20 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
+          <p className=" text-[12px] text-black md:text-[15px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
             “Why create just a fictional world when I can create the real
             world?” This thought struck me three years ago while I was working
             on my second novel, which will eventually become my first English
