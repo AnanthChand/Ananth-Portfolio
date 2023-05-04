@@ -42,13 +42,13 @@ export default function Hero({}: Props) {
 
       <div className="h-screen flex flex-col justify-center items-center text-center overflow-hidden space-y-8 ">
         <BackgroundCircles />
+        <div className="rounded-xl h-32 object-cover w-32 relative mx-auto">
         <Image
           src="/ananth.JPG"
           alt=""
           className="rounded-xl h-32 object-cover w-32 relative mx-auto"
-          width={124}
-          height={124}
-        />
+         fill
+        /></div>
         <div className="z-20">
           <div className={inter.className}>
             <h1 className=" text-4xl ">Ananth Chandra</h1>

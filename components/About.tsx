@@ -32,14 +32,15 @@ function About({}: Props) {
         <h3 className=" absolute top-5 uppercase tracking-[20px] text-gray-500 md:text-2xl text:sm md:top-[-50px]">
           About
         </h3>
+        <motion.div initial={{ opacity: 0, x:-200 }}
+        whileInView={{ opacity: 1, x:1 }}
+        transition={{ duration: 1.2 }} className='relative flex h-20 w-20 object-cover -mb-32  rounded-full flex-shrink-0  md:rounded-xl md:w-64 md:h-96 xl:h-[430px] xl:w-[300px] md:mb-20 md:ml-0'>
         <Image
           src="/ananth4.JPG"
-          width={80}
-          height={80}
+          fill
           alt=""
-          className="flex h-20 w-20 object-cover -mb-32  rounded-full flex-shrink-0  md:rounded-xl md:w-64 md:h-96 xl:w-max xl:h-[450px] xl:ml-10 xl:mb-36 md:mb-20 md:ml-20  "
-        />
-        {/* -mb-20 md:mb-0 md:h-[300px] flex-shrink-0  h-[50px] w-max md:w-max xl:h-[200px] xl:w-max xl:mb-0 rounded-xl */}
+          className="object-cover rounded-lg"
+        /></motion.div>
         <div className={arimo.className}>
           <p className=" text-[12px] text-black md:text-[15px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
             “Why create just a fictional world when I can create the real

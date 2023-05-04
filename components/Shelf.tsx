@@ -27,12 +27,12 @@ function Shelf({}: Props) {
           These are my few creative works showcasing my artist side.
         </p>
       </div>
-      <div className="absolute top-32 w-screen  md:h-full md:ml-10 h-96 flex carousel gap-5">
+      <div className="absolute top-40 w-screen justify-center   md:h-full md:ml-10 h-96 flex carousel gap-5">
         <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{duration:1.5}} className="w-[400px] h-max border border-black bg-gray-800 hover:bg-gray-900 rounded-lg p-1">
           <div className="relative w-full h-56">
             <Image
               fill
-              src="/sum-it.png"
+              src="/sum.gif"
               alt="book"
               className=" object-cover"
             />
@@ -53,7 +53,7 @@ function Shelf({}: Props) {
           <div className="relative w-full h-56">
             <Image
               fill
-              src="/sam.jpg"
+              src="/sam.gif"
               alt="book"
               className=" object-cover"
             />
@@ -74,7 +74,7 @@ function Shelf({}: Props) {
           <div className="relative w-full h-56">
             <Image
               fill
-              src="/ananth.jpg"
+              src="/f.gif"
               alt="book"
               className=" object-cover"
             />
