@@ -20,7 +20,7 @@ export default function Header({}: Props) {
           url="https://youtube.com/"
           fgColor="grey"
           bgColor="transparent"
-          className="scale-75"
+          className="scale-75 "
         />
          </motion.div>
          <motion.div

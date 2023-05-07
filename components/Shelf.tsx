@@ -53,7 +53,7 @@ function Shelf({}: Props) {
           <div className="relative w-full h-56">
             <Image
               fill
-              src="/sam.gif"
+              src="/samya.gif"
               alt="book"
               className=" object-cover"
             />

@@ -20,9 +20,10 @@ function ContactMe({}: Props) {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href =
-      "mailto.ananthinindia@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. $(formData.message) (${formData.email})";
+    const mailtoLink = `mailto:ananthinindia@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    window.location.href = mailtoLink;
   };
+  
 
   return (
     <div
@@ -39,11 +40,8 @@ function ContactMe({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10 text-black absolute top-32">
-        <h4 className="text-2xl font-semibold text-center">
-          I have got what you need.
-          <span className="decoration-[#f7ab0a]/40 ">Lets Talk.</span>
-        </h4>
+      <div className="flex flex-col space-y-10 text-black absolute top-44">
+        
 
         <div>
           <div className="flex items-center space-x-5 justify-center">

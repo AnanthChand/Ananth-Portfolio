@@ -30,15 +30,15 @@ export default function Home() {
         <Shelf />
       </section>
 
-      <section id="skills" className="snap-center ">
-        <Skills percentage={0} src={""} skillName={""} />
-      </section>
-
       <section id="projects" className="snap-center ">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-center ">
+      <section id="skills" className="snap-center ">
+        <Skills percentage={0} src={""} skillName={""} />
+      </section>
+
+      <section id="contact" className="snap-center">
         <ContactMe />
       </section>
 

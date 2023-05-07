@@ -43,18 +43,23 @@ export default function Hero({}: Props) {
       <div className="h-screen flex flex-col justify-center items-center text-center overflow-hidden space-y-8 ">
         <BackgroundCircles />
         <div className="rounded-xl h-32 object-cover w-32 relative mx-auto">
-        <Image
-          src="/ananth.JPG"
-          alt=""
-          className="rounded-xl h-32 object-cover w-32 relative mx-auto"
-         fill
-        /></div>
+          <Image
+            src="/ananth.JPG"
+            alt=""
+            className="rounded-xl h-32 object-cover w-32 relative mx-auto"
+            fill
+          />
+        </div>
         <div className="z-20">
           <div className={inter.className}>
             <h1 className=" text-4xl ">Ananth Chandra</h1>
             <h1 className="mt-2 mb-2">
-              <span className="{inter.className} bg-[#323231] text-white/90 p-1 border rounded-sm border-black/10 " >{text}</span>
-              <span className=""><Cursor cursorColor="white" /></span>
+              <span className="{inter.className} bg-[#323231] text-white/90 p-1 border rounded-sm border-black/10 ">
+                {text}
+              </span>
+              <span className="">
+                <Cursor cursorColor="white" />
+              </span>
             </h1>
           </div>
           <div className={inter400.className}>
@@ -68,16 +73,17 @@ export default function Hero({}: Props) {
                 Creations
               </button>
             </Link>
-            <Link href="#skills">
-              <button className="px-6 py-3 border border-transparent rounded-xl uppercase text-xs tracking-widest text-white transition-all hover:border-[#000000] hover:text-[#f7ab0a]">
-                Skills
-              </button>
-            </Link>
             <Link href="#projects">
               <button className="px-6 py-3 border border-transparent rounded-xl uppercase text-xs tracking-widest text-white transition-all hover:border-[#000000] hover:text-[#f7ab0a]">
                 Projects
               </button>
             </Link>
+            <Link href="#skills">
+              <button className="px-6 py-3 border border-transparent rounded-xl uppercase text-xs tracking-widest text-white transition-all hover:border-[#000000] hover:text-[#f7ab0a]">
+                Skills
+              </button>
+            </Link>
+
             <Link href="#contact">
               <button className="px-6 py-3 border border-transparent rounded-xl uppercase text-xs tracking-widest text-white transition-all hover:border-[#000000] hover:text-[#f7ab0a]">
                 Contact

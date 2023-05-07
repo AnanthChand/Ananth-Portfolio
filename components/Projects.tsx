@@ -54,7 +54,7 @@ function App() {
     <div
       className="h-screen"
       style={{
-        backgroundImage: "url('/bg6.png')",
+        backgroundImage: "url('/bg3.png')",
         backgroundSize: "cover",
         minHeight: "100vh",
         minWidth: "100vw",
@@ -63,7 +63,7 @@ function App() {
     >
 
     <div className="h-screen w-full flex flex-col justify-center items-center relative m-0">
-      <div className="text-white absolute md:top-10 top-16 uppercase md:tracking-[10px] text-2xl ">Projects</div>
+      <div className="text-black absolute md:top-10 top-16 uppercase md:tracking-[10px] text-2xl ">Projects</div>
     <div className='max-w-[1100px] h-[600px] w-full m-auto py-16 px-4 relative group'>
     <div
       style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -91,8 +91,8 @@ function App() {
       </div>
     </div>
     <div className="flex flex-col justify-center items-center absolute md:bottom-10 bottom-10">
-    <h1 className="md:text-2xl uppercase  text-xl font-bold text-white">{slides[currentIndex].title}</h1>
-    <p className="md:text-xl text-sm text-white">{slides[currentIndex].description}</p>
+    <h1 className="md:text-2xl uppercase  text-xl font-bold text-black">{slides[currentIndex].title}</h1>
+    <p className="md:text-xl text-sm text-black">{slides[currentIndex].description}</p>
     </div>
     </div>
     </div>
