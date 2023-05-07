@@ -10,7 +10,7 @@ type Props = {};
 function Shelf({}: Props) {
   return (
     <div
-      className="h-screen relative w-full flex flex-col justify-center items-center "
+      className="h-screen relative md:w-max w-[300px] flex flex-col justify-center items-center "
       style={{
         backgroundImage: "url('/bg6.png')",
         backgroundSize: "cover",
@@ -27,8 +27,8 @@ function Shelf({}: Props) {
           These are my few creative works showcasing my artist side.
         </p>
       </div>
-      <div className="absolute top-40 w-screen justify-center   md:h-full md:ml-10 h-96 flex carousel gap-5">
-        <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{duration:1.5}} className="w-[400px] h-max border border-black bg-gray-800 hover:bg-gray-900 rounded-lg p-1">
+      <div className="grid grid-flow-col grid-cols-2 gap-10 md:overflow-x-visible  overflow-x-visible  mt-20">
+        <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{duration:1.5}} className="w-[400px]   h-[500px] md:h-max border border-black border-e-8 bg-gray-700 hover:bg-gray-900 rounded-lg p-1 hover:z-50 ">
           <div className="relative w-full h-56">
             <Image
               fill
@@ -49,7 +49,7 @@ function Shelf({}: Props) {
             </p>
           </div>
         </motion.div>
-        <motion.div initial={{y:200}} whileInView={{y:0}} transition={{duration:1.5}} className="w-[400px] h-max border border-black bg-gray-800 hover:bg-gray-900 rounded-lg p-1">
+        <motion.div initial={{y:200}} whileInView={{y:0}} transition={{duration:1.5}} className="w-[400px]   h-[475px] md:h-max border border-black border-e-8 border-s-8 bg-gray-700 hover:bg-gray-900 rounded-lg p-1 hover:z-50">
           <div className="relative w-full h-56">
             <Image
               fill
@@ -70,7 +70,7 @@ function Shelf({}: Props) {
             </p>
           </div>
         </motion.div>
-        <motion.div initial={{x:200}} whileInView={{x:0}} transition={{duration:1.5}} className="w-[400px] h-max border border-black bg-gray-800 hover:bg-gray-900 rounded-lg p-1">
+        <motion.div initial={{x:200}} whileInView={{x:0}} transition={{duration:1.5}} className="w-[400px]   h-[450px] md:h-max border border-black border-e-8 bg-gray-700 hover:bg-gray-900 rounded-lg p-1 hover:z-50">
           <div className="relative w-full h-56">
             <Image
               fill

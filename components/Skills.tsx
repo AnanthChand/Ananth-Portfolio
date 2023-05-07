@@ -9,58 +9,72 @@ function Skills({}: SkillProps) {
     {
       src: "/html.png",
       percentage: 100,
+      skillName: "HTML"
     },
     {
       src: "/css.png",
       percentage: 80,
+      skillName: "CSS"
     },
     {
       src: "/js.png",
       percentage: 70,
+      skillName:"js"
     },
     {
       src: "/react.png",
       percentage: 60,
+      skillName:"REACTJS"
     },
     {
-      src: "/expressJS.png",
+      src: "/flutter.png",
       percentage: 50,
+      skillName:"FLUTTER"
     },
     {
       src: "/moongodb.png",
       percentage: 50,
+      skillName:"MOONGODB"
     },
     {
       src: "/git.png",
       percentage: 40,
+      skillName:"GIT"
     },
     {
       src: "/tailwindcss.png",
       percentage: 40,
+      skillName:"TAILWINDCSS"
     },
     {
       src: "/sql.png",
       percentage: 40,
+      skillName:"SQL"
     },
     {
       src: "/python.png",
       percentage: 40,
+      skillName:"PYTHON"
     },
     {
       src: "/next.png",
       percentage: 40,
+      skillName:"NEXT"
     },
     {
       src: "/bootstrap.png",
       percentage: 40,
+      skillName:"BOOTSTRAP"
     },
     {
       src: "/express.png",
       percentage: 40,
+      skillName:"EXPRESS"
     },
     {
       src: "/adobe.png",
       percentage: 40,
+      skillName:"adobe PP"
     },
   ];
 
@@ -87,9 +101,9 @@ function Skills({}: SkillProps) {
           Hover over to know current profieciency.
         </h3>
 
-        <div className="absolute top-28 grid md:grid-cols-4 grid-cols-3 gap-4 ">
+        <div className="absolute top-40 grid md:grid-cols-4 grid-cols-3 gap-4 ">
           {skills.map((skill, index) => (
-            <Skill key={index} src={skill.src} percentage={skill.percentage} />
+            <Skill key={index} src={skill.src} percentage={skill.percentage} skillName={skill.skillName}/>
           ))}
         </div>
       </motion.div>

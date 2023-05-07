@@ -53,7 +53,7 @@ export default function Hero({}: Props) {
           <div className={inter.className}>
             <h1 className=" text-4xl ">Ananth Chandra</h1>
             <h1 className="mt-2 mb-2">
-              <span className="{inter.className} bg-[#323231] text-white/90 p-1 border rounded-sm border-black/40 " >{text}</span>
+              <span className="{inter.className} bg-[#323231] text-white/90 p-1 border rounded-sm border-black/10 " >{text}</span>
               <span className=""><Cursor cursorColor="white" /></span>
             </h1>
           </div>
@@ -65,7 +65,7 @@ export default function Hero({}: Props) {
             </Link>
             <Link href="#shelf">
               <button className="px-6 py-3 border border-transparent rounded-xl uppercase text-xs tracking-widest textwhite0 transition-all hover:border-[#000000] hover:text-[#f7ab0a]">
-                Shelf
+                Creations
               </button>
             </Link>
             <Link href="#skills">

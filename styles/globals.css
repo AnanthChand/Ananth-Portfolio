@@ -13,4 +13,39 @@
     @apply outline-none bg-slate-400 rounded-sm border-b px-6 py-4 border-[#242424] text-white placeholder-slate-500 transition-all focus:border-white/80 focus:text-white/80 hover:border-black
 }
 
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 1rem;
+    scroll-snap-align: center;
 
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    border: none;
+    background-color: transparent;
+    color: rgb(136, 130, 130);
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    color: black;
+  }
+  

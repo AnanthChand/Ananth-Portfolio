@@ -2,7 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Arimo } from 'next/font/google';
 import Image from "next/image";
+import { Inter } from "next/font/google";
 
+
+const inter = Inter({ weight: ["600"], subsets: ["latin"] });
 
 const arimo = Arimo({ weight: ['400'], subsets: ['cyrillic'] });
 
@@ -10,6 +13,8 @@ type Props = {};
 
 function About({}: Props) {
   return (
+    <div className={inter.className}>
+
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -42,7 +47,7 @@ function About({}: Props) {
           className="object-cover rounded-lg"
         /></motion.div>
         <div className={arimo.className}>
-          <p className=" text-[12px] text-black md:text-[15px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
+          <p className=" text-[15px] text-black md:text-[20px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
             “Why create just a fictional world when I can create the real
             world?” This thought struck me three years ago while I was working
             on my second novel, which will eventually become my first English
@@ -67,6 +72,8 @@ function About({}: Props) {
         </div>
       </motion.div>
     </motion.div>
+    </div>
+
   );
 }
 
