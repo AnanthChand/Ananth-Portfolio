@@ -23,7 +23,6 @@ function ContactMe({}: Props) {
     const mailtoLink = `mailto:ananthinindia@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
     window.location.href = mailtoLink;
   };
-  
 
   return (
     <div
@@ -41,8 +40,6 @@ function ContactMe({}: Props) {
       </h3>
 
       <div className="flex flex-col space-y-10 text-black absolute top-44">
-        
-
         <div>
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
@@ -54,7 +51,9 @@ function ContactMe({}: Props) {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
-            <p>Mankalale village, Sagar Talluk, Shivamogga District</p>
+            <p>
+              Mankalale village, Sagar Talluk, Shivamogga District, Karnataka
+            </p>
           </div>
         </div>
 
@@ -63,7 +62,7 @@ function ContactMe({}: Props) {
           action="post"
           className="flex flex-col space-y-2 mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 ">
             <input
               {...register("name")}
               placeholder="Name"
@@ -90,7 +89,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black"
+            className="bg-[#f7ab0a] py-5 px-10 rounded-md font-extrabold uppercase hover:rounded-lg hover:bg-[#ffd579] text-black"
           >
             Submit
           </button>

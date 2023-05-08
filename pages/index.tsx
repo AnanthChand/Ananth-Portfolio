@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="h-screen bg-white  text-white snap-y overflow-scroll overflow-x-hidden snap-mandatory z-0 scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#f7ab0a] scrollbar-corner-neutral-600">
+    <div className="h-screen bg-white snap-y overflow-scroll overflow-x-hidden snap-mandatory z-0 scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#f7ab0a] scrollbar-corner-neutral-600">
       <title>Ananth</title>
 
       <Header />
@@ -45,14 +45,4 @@ export default function Home() {
   
     </div>
   );
-}
-
-{
-  /* header
-    hero
-    about
-    experiance
-    skills
-    Projects
-    contactme */
 }

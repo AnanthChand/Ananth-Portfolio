@@ -10,7 +10,7 @@
 
 
 .contactInput{
-    @apply outline-none bg-slate-400 rounded-sm border-b px-6 py-4 border-[#242424] text-white placeholder-slate-500 transition-all focus:border-white/80 focus:text-white/80 hover:border-black
+    @apply outline-none bg-black rounded-sm border-b px-6 py-4 border-[#242424] text-white placeholder-white/50 transition-all focus:border-white/80 focus:text-white/80 hover:border-black hover:rounded-lg
 }
 
 .carousel-inner {

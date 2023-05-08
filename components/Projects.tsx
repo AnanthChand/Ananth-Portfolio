@@ -5,30 +5,30 @@ import { RxDotFilled } from "react-icons/rx";
 function App() {
   const slides = [
     {
-      url: "/ananth.jpg",
-      title: "project1",
-      description: "lorem ipsum dolor sit amet",
+      url: "/shambhu.jpg",
+      title: "Temple website",
+      description: "Our village temple website, built with NextJs.",
     },
     {
       url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      title: "project2",
+      title: "A netflix clone",
       description: "lorem ipsum dolor sit amet",
     },
     {
       url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-      title: "project3",
+      title: "Games website",
       description: "lorem ipsum dolor sit amet",
     },
 
     {
       url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
-      title: "project4",
-      description: "lorem ipsum dolor sit amet",
+      title: "Sambhram",
+      description: "This is a website for a studio",
     },
     {
       url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
-      title: "project5",
-      description: "lorem ipsum dolor sit amet",
+      title: "Sum-it",
+      description: "My personal blog site.",
     },
   ];
 
