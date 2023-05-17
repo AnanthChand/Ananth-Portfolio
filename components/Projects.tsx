@@ -5,7 +5,7 @@ import { RxDotFilled } from "react-icons/rx";
 function App() {
   const slides = [
     {
-      url: "/shambhu.jpg",
+      url: "/temple.png",
       title: "Temple website",
       description: "Our village temple website, built with NextJs.",
     },
@@ -15,7 +15,7 @@ function App() {
       description: "lorem ipsum dolor sit amet",
     },
     {
-      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+      url: "games.png",
       title: "Games website",
       description: "lorem ipsum dolor sit amet",
     },
@@ -26,7 +26,7 @@ function App() {
       description: "This is a website for a studio",
     },
     {
-      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      url: "/sum-it.png",
       title: "Sum-it",
       description: "My personal blog site.",
     },
