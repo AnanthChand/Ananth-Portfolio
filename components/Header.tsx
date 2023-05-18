@@ -9,20 +9,7 @@ export default function Header({}: Props) {
   return (
     <header className="sticky flex p-5 justify-between max-w-5xl items-start top-0 mx-auto z-20 xl:items-center">
       <div className="flex">
-      <motion.div
-        initial={{ x: -500, opacity: 0, scale: 0.5 }}
-        animate={{ x: 0, opacity: 1, scale: 1 }}
-        whileHover={{ scale: 1.5 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-row items-center"
-      >
-        <SocialIcon
-          url="https://youtube.com/"
-          fgColor="grey"
-          bgColor="transparent"
-          className="scale-75 "
-        />
-         </motion.div>
+      
          <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}

@@ -35,29 +35,34 @@ function ContactMe({}: Props) {
       }}
       className="h-screen flex relative flex-col text-center md:text-left mx-auto items-center md:flex-row max-w-7xl px-10 justify-evenly "
     >
-      <h3 className=" absolute top-24 uppercase tracking-[5px] text-gray-500 text-2xl">
+      <motion.h3 initial={{ x: -200 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1.5 }} className=" absolute top-24 uppercase tracking-[10px] text-gray-900 text-4xl flex justify-center items-center md:left-59 animate-pulse animate-ping">
         Contact
-      </h3>
+      </motion.h3>
 
-      <div className="flex flex-col space-y-10 text-black absolute top-44">
+      <div className="flex flex-col space-y-10 text-black absolute top-44  ">
         <div>
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
-            <p>8762653711</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center">
+          
+          <div className="flex items-center space-x-5 justify-center animate-pulse">
             <EnvelopeIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
             <p>ananthinindia@gmail.com</p>
           </div>
-          <div className="flex items-center space-x-5 justify-center">
+          <div className="flex items-center space-x-5 justify-center animate-pulse">
             <MapIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
             <p>
-              Mankalale village, Sagar Talluk, Shivamogga District, Karnataka
+              Mankalale village, Sagar Talluk, Shivamogga District, Karnataka, 577401
             </p>
+          </div>
+          <div className="flex items-center space-x-5 justify-center animate-pulse">
+            <PhoneIcon className="h-7 w-7 animate-pulse text-[#f7ab0a]" />
+            <p>8762653711</p>
           </div>
         </div>
 
-        <form
+        <motion.form initial={{ x: 200 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1.5 }}
           onSubmit={handleSubmit(onSubmit)}
           action="post"
           className="flex flex-col space-y-2 mx-auto"
@@ -93,7 +98,7 @@ function ContactMe({}: Props) {
           >
             Submit
           </button>
-        </form>
+        </motion.form>
       </div>
     </div>
   );

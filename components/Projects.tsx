@@ -8,27 +8,27 @@ function App() {
     {
       url: "/temple.png",
       title: "Temple website",
-      description: "Our village temple website, built with NextJs.",
+      description: "Our village temple website, built with NextJs, framer motion etc.",
       link: "https://shambhulingeshwara.vercel.app/",
     },
     {
       url: "/games.png",
       title: "Games website",
-      description: "lorem ipsum dolor sit amet",
+      description: "3 games built with JS, HTML, CSS",
       link: "https://github.com/AnanthChand/games"
     },
 
     {
-      url: "/",
-      title: "Sambhram",
-      description: "This is a website for a studio",
-      link: "https://github.com/AnanthChand/games"
+      url: "/port.png",
+      title: "Portfolio",
+      description: "This is a simple portfolio built using React and vite.",
+      link: "https://github.com/AnanthChand/Minimalistic-Portfolio"
 
     },
     {
       url: "/sum-it.png",
       title: "Sum-it",
-      description: "My personal blog site.",
+      description: "My personal blog site built with NextJS, framer-motion etc.",
       link: "https://github.com/AnanthChand/games"
 
     },
