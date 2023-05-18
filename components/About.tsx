@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import { Arimo } from "next/font/google";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { fadeIn, staggerContainer } from '../utils/motion';
-
+import { fadeIn, staggerContainer } from "../utils/motion";
 
 const inter = Inter({ weight: ["600"], subsets: ["latin"] });
 
@@ -51,7 +50,12 @@ function About({}: Props) {
             />
           </motion.div>
           <div className={arimo.className}>
-            <motion.p variants={fadeIn('up', 'tween', 0.2, 1)} className=" text-[20px] text-black md:text-[25px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10">
+            <motion.p
+              initial={{ x: 200, opacity: 0, }}
+              whileInView={{ x: 0, opacity:1 }}
+              transition={{ duration: 1.2 }}
+              className=" text-[20px] text-black md:text-[25px] space-y-1 mb-2 md:mb-20 mt-9 px-0 md:my-0 md:px-10"
+            >
               A noble thought of creating a non-fictional world while writing my
               second fiction made me a web developer. My story is that I was
               born and brought up in a small Malnad village called Mankale,
