@@ -45,7 +45,7 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://github.com/"
+          url="https://github.com/AnanthChand"
           fgColor="grey"
           bgColor="transparent"
           className="scale-75"

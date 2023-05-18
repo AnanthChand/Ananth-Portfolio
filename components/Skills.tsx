@@ -8,7 +8,7 @@ function Skills({}: SkillProps) {
   const skills: SkillProps[] = [
     {
       src: "/html.png",
-      percentage: 100,
+      percentage: 90,
       skillName: "HTML"
     },
     {
@@ -28,52 +28,52 @@ function Skills({}: SkillProps) {
     },
     {
       src: "/flutter.png",
-      percentage: 50,
+      percentage: 30,
       skillName:"FLUTTER"
     },
     {
       src: "/moongodb.png",
-      percentage: 50,
+      percentage: 60,
       skillName:"MOONGODB"
     },
     {
       src: "/git.png",
-      percentage: 40,
+      percentage: 60,
       skillName:"GIT"
     },
     {
       src: "/tailwindcss.png",
-      percentage: 40,
+      percentage: 70,
       skillName:"TAILWINDCSS"
     },
     {
       src: "/sql.png",
-      percentage: 40,
+      percentage: 60,
       skillName:"SQL"
     },
     {
       src: "/python.png",
-      percentage: 40,
+      percentage: 60,
       skillName:"PYTHON"
     },
     {
       src: "/next.png",
-      percentage: 40,
+      percentage: 60,
       skillName:"NEXT"
     },
     {
       src: "/bootstrap.png",
-      percentage: 40,
+      percentage: 60,
       skillName:"BOOTSTRAP"
     },
     {
       src: "/express.png",
-      percentage: 40,
+      percentage: 70,
       skillName:"EXPRESS"
     },
     {
       src: "/adobe.png",
-      percentage: 40,
+      percentage: 80,
       skillName:"adobe PP"
     },
   ];

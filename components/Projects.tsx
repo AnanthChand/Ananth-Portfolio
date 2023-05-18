@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import Link from "next/link";
 
 function App() {
   const slides = [
@@ -8,27 +9,28 @@ function App() {
       url: "/temple.png",
       title: "Temple website",
       description: "Our village temple website, built with NextJs.",
+      link: "https://shambhulingeshwara.vercel.app/",
     },
     {
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      title: "A netflix clone",
-      description: "lorem ipsum dolor sit amet",
-    },
-    {
-      url: "games.png",
+      url: "/games.png",
       title: "Games website",
       description: "lorem ipsum dolor sit amet",
+      link: "https://github.com/AnanthChand/games"
     },
 
     {
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      url: "/",
       title: "Sambhram",
       description: "This is a website for a studio",
+      link: "https://github.com/AnanthChand/games"
+
     },
     {
       url: "/sum-it.png",
       title: "Sum-it",
       description: "My personal blog site.",
+      link: "https://github.com/AnanthChand/games"
+
     },
   ];
 
@@ -65,12 +67,11 @@ function App() {
     <div className="h-screen w-full flex flex-col justify-center items-center relative m-0">
       <div className="text-black absolute md:top-10 top-16 uppercase md:tracking-[10px] text-2xl ">Projects</div>
     <div className='max-w-[1100px] h-[600px] w-full m-auto py-16 px-4 relative group'>
-    <div
+    <Link href={slides[currentIndex].link} ><div
       style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
       className='w-full h-full rounded-2xl bg-center flex flex-col justify-center items-center bg-cover duration-500'
     >
-      
-    </div>
+    </div></Link>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
