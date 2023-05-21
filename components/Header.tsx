@@ -54,7 +54,7 @@ export default function Header({}: Props) {
             className="cursor-pointer scale-75"
           />
         </motion.div>
-        <Link href="/ananthresumefinal.pdf">
+        <Link href="/Ananth Chandra-Resume.pdf">
           <p className=" uppercase mb-1 md:inline-flex text-sm text-gray-400 bg-black/20 p-1 rounded-lg">
             resume
           </p>
