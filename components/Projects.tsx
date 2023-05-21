@@ -28,7 +28,7 @@ function App() {
     {
       url: "/sum-it.png",
       title: "Sum-it",
-      description: "My personal blog site built with NextJS, framer-motion etc.",
+      description: "My personal blog site built with ReactJS, MongoDb, expressJS framer-motion etc.",
       link: "https://github.com/AnanthChand/games"
 
     },
