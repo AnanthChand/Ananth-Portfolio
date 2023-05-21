@@ -18,7 +18,7 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://instagram.com/"
+          url="https://www.instagram.com/ananth_chandra_/"
           fgColor="grey"
           bgColor="transparent"
           className="scale-75"
