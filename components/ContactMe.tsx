@@ -33,7 +33,7 @@ function ContactMe({}: Props) {
         minWidth: "100vw",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-screen flex relative flex-col text-center md:text-left mx-auto items-center md:flex-row max-w-7xl px-10 justify-evenly "
+      className="h-screen  flex relative flex-col text-center md:text-left mx-auto items-center md:flex-row max-w-7xl px-10 justify-evenly "
     >
       <motion.h3 initial={{ x: -200 }}
           whileInView={{ x: 0 }}
@@ -59,13 +59,13 @@ function ContactMe({}: Props) {
             <p>8762653711</p>
           </div>
         </div>
-
+<div className="w-96 md:w-max   ">
         <motion.form initial={{ x: 200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1.5 }}
           onSubmit={handleSubmit(onSubmit)}
           action="post"
-          className="flex flex-col space-y-2 mx-auto"
+          className="flex flex-col  space-y-4 mx-auto"
         >
           <div className="flex space-x-2 ">
             <input
@@ -77,7 +77,7 @@ function ContactMe({}: Props) {
             <input
               {...register("email")}
               placeholder="E-mail"
-              className="contactInput"
+              className="contactInput w-full overflow-scroll"
               type="email"
             />
           </div>
@@ -99,6 +99,7 @@ function ContactMe({}: Props) {
             Submit
           </button>
         </motion.form>
+        </div>
       </div>
     </div>
   );
