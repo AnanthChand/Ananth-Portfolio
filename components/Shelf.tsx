@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ShelfCard from "./ShelfCard";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +9,7 @@ type Props = {};
 function Shelf({}: Props) {
   return (
     <div
-      className="h-screen relative md:w-max w-[300px] flex flex-col justify-center items-center "
+      className="h-screen relative md:w-max w-full flex flex-col justify-center items-center "
       style={{
         backgroundImage: "url('/bg6.png')",
         backgroundSize: "cover",
@@ -27,12 +26,12 @@ function Shelf({}: Props) {
           These are my few creative works showcasing my artist side.
         </p>
       </div>
-      <div className="grid grid-flow-col grid-cols-2 gap-10 md:overflow-x-visible  overflow-x-visible  mt-20">
+      <div className="flex h-max flex-col md:flex-row overflow-x-scroll w-max gap-10  mt-36">
         <motion.div
           initial={{ x: -200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1.5 }}
-          className="w-[400px]   h-[500px] md:h-max border border-black border-e-8 bg-gray-700 hover:bg-gray-900 rounded-lg p-1 hover:z-50 "
+          className="w-[400px] h-[500px] md:h-max border border-black border-e-8 bg-gray-700 hover:bg-gray-900 rounded-lg p-1 hover:z-50 "
         >
           <div className="relative w-full h-56">
             <Image fill src="/sum.gif" alt="book" className=" object-cover" />

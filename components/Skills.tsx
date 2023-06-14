@@ -1,7 +1,6 @@
 import Skill, { SkillProps } from "./Skill";
 import React from "react";
 import { motion } from "framer-motion";
-import { Arimo } from "next/font/google";
 import Image from "next/image";
 
 function Skills({}: SkillProps) {
@@ -101,7 +100,7 @@ function Skills({}: SkillProps) {
           Hover over to know current profieciency.
         </h3>
 
-        <div className="absolute top-40 grid md:grid-cols-4 grid-cols-3 gap-4 ">
+        <div className="absolute top-40 grid md:grid-cols-4 grid-cols-3 md:gap-4 gap-1">
           {skills.map((skill, index) => (
             <Skill key={index} src={skill.src} percentage={skill.percentage} skillName={skill.skillName}/>
           ))}

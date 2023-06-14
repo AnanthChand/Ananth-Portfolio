@@ -33,7 +33,7 @@ function About({}: Props) {
           transition={{ duration: 1.2 }}
           className=" h-screen flex flex-col relative md:top-24  text-center md:text-left md:flex-row px-10 max-w-7xl justify-around mx-auto items-center"
         >
-          <h3 className=" absolute top-5 uppercase tracking-[20px] text-gray-500 md:text-2xl text:sm md:top-[-50px]">
+          <h3 className=" absolute top-10  uppercase md:tracking-[20px] tracking-wide  text-gray-500 md:text-2xl text:sm md:top-[-50px]">
             About
           </h3>
           <motion.div
@@ -46,7 +46,7 @@ function About({}: Props) {
               src="/ananth4.JPG"
               fill
               alt=""
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg hidden sm:block"
             />
           </motion.div>
           <div className={arimo.className}>
